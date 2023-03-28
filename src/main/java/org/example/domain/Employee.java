@@ -1,6 +1,7 @@
 package org.example.domain;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Employee {
     private String name;
@@ -15,6 +16,10 @@ public class Employee {
         this.name = name;
         this.idNumber = idNumber;
         this.salary = salary;
+        this.department = department;
+    }
+    @Autowired
+    public Employee(Department department) {
         this.department = department;
     }
 

@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 public class AppConfig {
     @Bean("emp")
     public Employee method1(){
-        Employee employee= new Employee();
+        Employee employee= new Employee(method2());
         employee.setIdNumber(1);
         employee.setSalary(900000);
         employee.setName("Trisha");

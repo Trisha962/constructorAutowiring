@@ -7,7 +7,7 @@ public class Department {
     private String location;
 
     public Department(){}
-    @Autowired
+
     public Department(String deptName, String location) {
         this.deptName = deptName;
         this.location = location;
